@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            HOME
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .header{
+                padding: 80px;
+                text-align: center;
+                background-color:#1abc9c;
+                color: white;
+            }
+            .header h1 {
+                font-size: 40px;
+            }
+            .navbar {
+                overflow: hidden;
+                background-color:#333;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            .navbar a.right{
+                float: right;
+            }
+            .navbar a:hover{
+                background-color: #e8e8e8;
+                color: black;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .side {
+                flex:30%;
+                background-color:#e9e7e7;
+                padding: 20px;      
+                }
+            .main {
+                flex: 70%;
+                background-color:rgb(240, 240, 240);
+                padding: 20px;
+            }
+            @media screen and (max-width: 700px) {
+                .row {   
+                flex-direction: column;
+                }
+            }
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                float: none;
+                width:100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>MY SELF</h1>
+            <p>VAIBHAV RAVAL</p>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="feedback.html" class="right">Feedback</a>
+        </div>
+        <div class="row">
+            <div class="side">
+                <h2>MY PIC :</h2>
+                <div class="myimg"><img src="img/FB_IMG_1602003897537.jpg" style="width: 100%; height: 100%;"></img></div>
+                <p>You already know my name.</p>
+            </div>
+            <div class="main">
+                <h2>CONTACT :</h2>
+                <h4>Wanna Contact me? Just click on contact option.😀</h4>
+                <h2>ABOUT ME :</h2>
+                <h4>I am too lazy to write about me, Just click on about option.</h4>
+            </div>
+        </div>
+    </body>
+</html>

@@ -37,8 +37,8 @@
                 float: right;
             }
             .navbar a:hover{
-                background-color: #e8e8e8;
-                color: black;
+                background-color: #777777;
+                color: white
             }
             * {
                 box-sizing: border-box;
@@ -56,6 +56,9 @@
                 flex: 70%;
                 background-color:rgb(240, 240, 240);
                 padding: 20px;
+            }
+            .frame{
+                overflow: hidden;
             }
             @media screen and (max-width: 700px) {
                 .row {   
@@ -77,12 +80,12 @@
             <p>VAIBHAV RAVAL</p>
         </div>
         <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="feedback.html" class="right">Feedback</a>
+            <a href="home.html" target="aframe">Home</a>
+            <a href="contact.html" target="aframe">Contact</a>
+            <a href="about.html" target="aframe">About</a>
+            <a href="feedback.html" class="right" target="aframe">Feedback</a>
         </div>
-        <div class="row">
+        <!--<div class="row">
             <div class="side">
                 <h2>MY PIC :</h2>
                 <div class="myimg"><img src="img/FB_IMG_1602003897537.jpg" style="width: 100%; height: 100%;"></img></div>
@@ -93,7 +96,10 @@
                 <h4>Wanna Contact me? Just click on contact option.😀</h4>
                 <h2>ABOUT ME :</h2>
                 <h4>I am too lazy to write about me, Just click on about option.</h4>
-            </div>
+            </div>-->
+        <div class="frame">
+            <iframe src="home.html" name="aframe" frameborder="0" width="100%" height="1000px" scrolling="no"></iframe>
+        </div>
         </div>
         </div>
     </body>
